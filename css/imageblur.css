@@ -1,0 +1,87 @@
+ .image{
+            width:50%;
+            height:50%;
+        }
+      
+.img-container{
+	
+    width:auto;
+ 
+}
+.img-container:before,
+.img-container:after {
+    content:"";
+    
+}
+.img-container:after {
+    clear:both;
+}
+.img-container div{
+	
+	
+	background:transparent;
+	cursor: pointer;
+	
+	
+	
+	text-transform: none;
+
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+	box-shadow: 
+		0px 0px 0px 10px rgba(255,255,255,1), 
+		
+	-webkit-transition: 
+		opacity 0.4s linear, 
+		-webkit-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	-moz-transition: 
+		opacity 0.4s linear, 
+		-moz-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	-o-transition: 
+		opacity 0.4s linear, 
+		-o-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	-ms-transition: 
+		opacity 0.4s linear, 
+		-ms-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	transition: 
+		opacity 0.4s linear, 
+		transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+
+}
+
+/* Hover Style for all the items: blur, scale down*/
+.img-container div.blur{
+	
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0.2;
+}
+
+
+/* Hover Style for single item: scale up */
+.img-container div.active{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	
+	z-index: 100;	
+	opacity: 1;
+}
+@media screen and (max-width: 1000px) 
+{
+    .img-container{
+       width:90%;  
+    }
+    
+    
+}  

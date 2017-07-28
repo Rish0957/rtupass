@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTU Pass: Login/Register</title>
+     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<style type="text/css">
+body{padding-top: 3%;}
+	.sign{
+		background-image: url(images/sign.jpg);
+		min-height: 700px;
+	}
+</style>
+</head>
+<body>
+	
+		<!--Header Started-->
+        <div class="navbar navbar-inverse navbar-fixed-top " >
+            <div class="container">
+                <span><img src="images/header.png" class="navbar-brand"></span><a href="rtupass_home.html" class="navbar-brand">RTU Pass</a>
+                <a href="#download" class="btn btn-warning btn-sm navbar-btn navbar-right  " data-toggle="modal">Download App <span class=" glyphicon glyphicon-download-alt"></span></a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbarcollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbarcollapse">
+                    <ul class="nav navbar-nav ">
+                        <li ><a href="rtupass_home.html"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+                        <li ><a href="rtupass_notes.html"><span class="glyphicon glyphicon-education"></span> Notes</a></li>
+                        <li><a href="rtupass_exam.html"><span class="  glyphicon glyphicon-briefcase"></span> Exam Papers</a></li>
+                        <li><a href="rtupass_lab.html"><span class="glyphicon glyphicon-book"></span> LAB Files</a></li>
+                        <li class="dropdown">
+                            <a href="#Social Media" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-share-alt"></span> Branch<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="active">Computer Science / IT</a></li>
+                                <li><a href="#">Electrical</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Civil</a></li>
+                                <li><a href="#">Mechanical</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rtupass_about.html"><span class="glyphicon glyphicon-user"></span> About RTU Pass</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div> <!--Header closed-->
+
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <form  method="get" action="?" class="form-horizontal" >
+            <div class="modal-header">
+                <h3 class="text-center"> RTU Pass
+                <small>5.1.1</small></h3>
+            </div>
+            <div class="modal-body">
+                <p>You must sign-up  first in order to enjoy extra features of RTU Pass . </p><br/>
+                
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="n">Name:</label>
+                            <div class="col-lg-9"><input   type="text" id="n" name="name" class="form-control" placeholder="Enter your name " required />   </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="c">College:</label>
+                            <div class="col-lg-9"><input   type="text" id="c" name="college" class="form-control" placeholder="Enter your College's name " required />   </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="e">Email-Id:</label>
+                            <div class="col-lg-9"><input   type="email" id="e" name="email" class="form-control" placeholder="Enter Your Email Here " required / >   </div>
+                    </div>
+                        <div class="form-group">
+                        <label class="col-lg-2 control-label" for="p">Password:</label>
+                            <div class="col-lg-9"><input   type="password" id="p" name="password" class="form-control" placeholder="Enter password for your account " required />   </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="m">Message:</label>
+                            <div class="col-lg-9"><textarea rows="8" id="m" name="message" class="form-control" placeholder="Enter Message for us (if any). "></textarea>  </div>
+                    </div>
+                    
+                    
+                
+            </div>
+            <div class="modal-footer">
+                <a  class="btn btn-danger " onclick="feedback();"> Feedback  <span class="glyphicon glyphicon-comment" ></span> </a>
+                <button type="submit" name="submit" class="btn btn-success ">Sign-up <span class="glyphicon glyphicon-send"></span></button>
+                
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <script src="jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <script>
+    $(document).ready(function(){
+
+        $(window).stellar();
+    });
+
+    </script> 
+</body>
