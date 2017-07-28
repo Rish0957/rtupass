@@ -1,7 +1,7 @@
 # RTU Pass
 #### a responsive website for downloading previous year papers, lab files etc
 
-Live preview click here: [RTUPass] https://rish0957.github.io/rtupass/
+Live preview click here: [RTUPass](https://rish0957.github.io/rtupass/)
 
 ## PS : This is just a front end design. If you have the content like previous year papers or something like that which you want to share, bravo!, feel free to use. Start by forking this project to your directory.
 
